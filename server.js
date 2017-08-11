@@ -11,7 +11,7 @@ var articals = {
 		tilte: 'Artical One | Ajay kumar Dubey',
 		heading: 'Artical one',
 		date: 'sep 5, 2017',
-		artical: ' Article One | Ajay Kumar Dubey' ,
+	
 		content: `   <p>
                         This is the content for my first article. This is the content for my first article .
                         
@@ -25,20 +25,20 @@ var articals = {
                         
                     </p>  `
     },
-    a2:{
+    a2: {
         tilte: 'Artical Two | Ajay kumar Dubey',
 		heading: 'Artical second',
 		date: 'sep 5, 2017',
-		artical: ' Article One | Ajay Kumar Dubey' ,
+	
 		content: `   <p>
                         This is the content for my Second Article. 
                      </p>  `
     },
-    a3:{
+    a3: {
     	tilte: 'Artical 03 | Ajay kumar Dubey',
 		heading: 'Artical third 03',
 		date: 'sep 5, 2017',
-		artical: ' Article third | Ajay Kumar Dubey' ,
+	
 		content: `   <p>
                         This is the content for my first article. This is the content for my first article .
                         
@@ -59,7 +59,7 @@ function createTemplate (data) {
         
     var title = data.title;
     var date = data.date;
-    var artical = data.artical;
+    
     var heading = data.heading;
     var content = data.content;
     
@@ -70,7 +70,7 @@ function createTemplate (data) {
         <head> 
         <link href="/ui/style.css" rel="stylesheet" />
         <title>
-            ${artical}
+            ${title}
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         </head>
