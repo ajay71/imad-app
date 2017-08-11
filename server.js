@@ -5,7 +5,9 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var a1 = {
+var articals = {
+
+ a1: {
 		tilte: 'Artical One | Ajay kumar Dubey',
 		heading: 'Artical one',
 		date: 'sep 5, 2017',
@@ -22,6 +24,35 @@ var a1 = {
                         This is the content for my first article. This is the content for my first article .
                         
                     </p>  `
+    },
+    a2:{
+        tilte: 'Artical Two | Ajay kumar Dubey',
+		heading: 'Artical second',
+		date: 'sep 5, 2017',
+		artical: ' Article One | Ajay Kumar Dubey' ,
+		content: `   <p>
+                        This is the content for my Second Article. 
+                     </p>  `
+    },
+    a3:{
+    	tilte: 'Artical 03 | Ajay kumar Dubey',
+		heading: 'Artical third 03',
+		date: 'sep 5, 2017',
+		artical: ' Article third | Ajay Kumar Dubey' ,
+		content: `   <p>
+                        This is the content for my first article. This is the content for my first article .
+                        
+                    </p>
+                     <p>
+                        This is the content for my first article. This is the content for my first article .
+                        
+                    </p>
+                     <p>
+                        This is the content for my first article. This is the content for my first article .
+                        
+                    </p>  `
+    },
+    
 };
 
 function createTemplate (data) {
