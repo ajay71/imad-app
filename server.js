@@ -25,7 +25,7 @@ var articles = {
                         
                     </p>  `
     },
-    'article-two': {
+  'article-two': {
         tilte: 'Article Two | Ajay kumar Dubey',
 		heading: 'Article second',
 		date: 'sep 5, 2017',
@@ -34,7 +34,7 @@ var articles = {
                         This is the content for my Second Article. 
                      </p>  `
     },
-    'article-three': {
+  'article-three': {
     	tilte: 'Article 03 | Ajay kumar Dubey',
 		heading: 'Article third 03',
 		date: 'sep 5, 2017',
@@ -105,7 +105,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:articleName', function (req, res) {
-    //articleName = a1
+    //articleName = article-one
     //articles(articlename = () content object for article one)
     var articlename = req.params.articleName;
    res.send(createTemplate (articles[articleName]));
