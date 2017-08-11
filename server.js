@@ -9,6 +9,7 @@ var a1 = {
 		tilte: 'Artical One | Ajay kumar Dubey',
 		heading: 'Artical one',
 		date: 'sep 5, 2017',
+		artical: ' Article One | Ajay Kumar Dubey' ,
 		content: `   <p>
                         This is the content for my first article. This is the content for my first article .
                         
