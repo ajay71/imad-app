@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 var articals = {
 
- 'a1': {
+ 'artical-one': {
 		tilte: 'Artical One | Ajay kumar Dubey',
 		heading: 'Artical one',
 		date: 'sep 5, 2017',
@@ -25,7 +25,7 @@ var articals = {
                         
                     </p>  `
     },
-    'a2': {
+    'artical-two': {
         tilte: 'Artical Two | Ajay kumar Dubey',
 		heading: 'Artical second',
 		date: 'sep 5, 2017',
@@ -34,7 +34,7 @@ var articals = {
                         This is the content for my Second Article. 
                      </p>  `
     },
-    'article-three': {
+    'artical-three': {
     	tilte: 'Artical 03 | Ajay kumar Dubey',
 		heading: 'Artical third 03',
 		date: 'sep 5, 2017',
