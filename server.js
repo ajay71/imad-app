@@ -28,7 +28,7 @@ var articles = {
   'a2': {
         tilte: 'Article Two | Ajay kumar Dubey',
 		heading: 'Article second',
-		date: 'sep 5, 2017',
+		date: 'sep 10, 2017',
 	
 		content: `   <p>
                         This is the content for my Second Article. 
@@ -37,7 +37,7 @@ var articles = {
   'a3': {
     	tilte: 'Article 03 | Ajay kumar Dubey',
 		heading: 'Article third 03',
-		date: 'sep 5, 2017',
+		date: 'sep 15, 2017',
 	
 		content: `   <p>
                         This is the content for my first article. This is the content for my first article .
