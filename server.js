@@ -5,11 +5,11 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articals = {
+var articles = {
 
- 'artical-one': {
-		tilte: 'Artical One | Ajay kumar Dubey',
-		heading: 'Artical one',
+ 'article-one': {
+		tilte: 'article One | Ajay kumar Dubey',
+		heading: 'article one',
 		date: 'sep 5, 2017',
 	
 		content: `   <p>
@@ -25,18 +25,18 @@ var articals = {
                         
                     </p>  `
     },
-    'artical-two': {
-        tilte: 'Artical Two | Ajay kumar Dubey',
-		heading: 'Artical second',
+    'article-two': {
+        tilte: 'Article Two | Ajay kumar Dubey',
+		heading: 'Article second',
 		date: 'sep 5, 2017',
 	
 		content: `   <p>
                         This is the content for my Second Article. 
                      </p>  `
     },
-    'artical-three': {
-    	tilte: 'Artical 03 | Ajay kumar Dubey',
-		heading: 'Artical third 03',
+    'article-three': {
+    	tilte: 'Article 03 | Ajay kumar Dubey',
+		heading: 'Article third 03',
 		date: 'sep 5, 2017',
 	
 		content: `   <p>
