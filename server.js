@@ -34,7 +34,7 @@ var articals = {
                         This is the content for my Second Article. 
                      </p>  `
     },
-    'a3': {
+    'article-three': {
     	tilte: 'Artical 03 | Ajay kumar Dubey',
 		heading: 'Artical third 03',
 		date: 'sep 5, 2017',
