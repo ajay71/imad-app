@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 var articals = {
 
- a1: {
+ 'a1': {
 		tilte: 'Artical One | Ajay kumar Dubey',
 		heading: 'Artical one',
 		date: 'sep 5, 2017',
@@ -25,7 +25,7 @@ var articals = {
                         
                     </p>  `
     },
-    a2: {
+    'a2': {
         tilte: 'Artical Two | Ajay kumar Dubey',
 		heading: 'Artical second',
 		date: 'sep 5, 2017',
@@ -34,7 +34,7 @@ var articals = {
                         This is the content for my Second Article. 
                      </p>  `
     },
-    a3: {
+    'a3': {
     	tilte: 'Artical 03 | Ajay kumar Dubey',
 		heading: 'Artical third 03',
 		date: 'sep 5, 2017',
@@ -104,17 +104,14 @@ app.get('/', function (req, res) {
   res.sendfile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/a1', function (req, res) {
-   res.send(createTemplate (a1));
+app.get('/articlename', function (req, res) {
+    //articlename = a1
+    //articles(articlename = () content object for article one)
+    var articlename = req.params.articlename;
+   res.send(createTemplate (articles[articlename]));
 });
 
-app.get('/a2', function (req, res) {
-   res.sendFile(path.join(__dirname, 'ui', 'a2.html'));
-});
 
-app.get('/a3', function (req, res) {
-   res.sendFile(path.join(__dirname, 'ui', 'a3.html'));
-});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
