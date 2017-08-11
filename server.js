@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleone = {
+var a1 = {
 		tilte: 'Artical One | Ajay kumar Dubey',
 		heading: 'Artical one',
 		date: 'sep 5, 2017',
@@ -72,7 +72,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/a1', function (req, res) {
-   res.send(createTemplate (articleone));
+   res.send(createTemplate (a1));
 });
 
 app.get('/a2', function (req, res) {
