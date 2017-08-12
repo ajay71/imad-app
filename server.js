@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 var articles = {
 
  'a1': {
-		tilte: 'article One | Ajay kumar Dubey',
+		title: 'article One | Ajay kumar Dubey',
 		heading: 'article one',
 		date: 'sep 5, 2017',
 	
@@ -26,7 +26,7 @@ var articles = {
                     </p>  `
     },
   'a2': {
-        tilte: 'Article Two | Ajay kumar Dubey',
+        title: 'Article Two | Ajay kumar Dubey',
 		heading: 'Article second',
 		date: 'sep 10, 2017',
 	
@@ -35,7 +35,7 @@ var articles = {
                      </p>  `
     },
   'a3': {
-    	tilte: 'Article 03 | Ajay kumar Dubey',
+    	title: 'Article 03 | Ajay kumar Dubey',
 		heading: 'Article third 03',
 		date: 'sep 15, 2017',
 	
