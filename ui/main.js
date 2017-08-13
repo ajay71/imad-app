@@ -6,6 +6,6 @@ el.innerHTML = 'Akshat Soft';
 
 // move the image
 var img = document.getElementById('madi');
-img.onclick = function (){
-    imag.style.marginLeft = '100px';
+img.onclick = function() {
+    img.style.marginLeft = '100px';
 };
