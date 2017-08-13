@@ -7,6 +7,7 @@ app.use(morgan('combined'));
 
 var articles = {
 
+
  'a1': {
 		title: 'article One | Ajay kumar Dubey',
 		heading: 'article one',
