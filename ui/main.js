@@ -23,7 +23,7 @@ request.onreadystatechange = function(){
 };
 
 // Make the requst
-request.open('GET', 'http://ajaysaf.imad.hasura-app.io/counter', true);
+request.open('GET', 'ajaysaf.imad.hasura-app.io/counter', true);
 request.sent(null);
 
 
