@@ -5,7 +5,6 @@ button.onclick=function(){
 
     // CREATE A REQUEST OBJECT
     
-
 var request = new XMLHttpRequest();
 
 // Capture the response and store it in a variable
@@ -24,7 +23,6 @@ request.onreadystatechange = function(){
 
 // Make the requst
 request.open('GET', 'ajaysaf.imad.hasura-app.io/counter', true);
-//request.sent(null);
-
+request.sent(null);
 
 };
