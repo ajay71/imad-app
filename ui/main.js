@@ -1,21 +1,17 @@
-console.log('Loaded!');
-// change the text of the main-text div
-var el = document.getElementById('main-text');
+//counter code
+var button=doucment.getElementById('counter');
+var counter=0;
 
-el.innerHTML = 'Well-come to Akshat Soft';
+button.onclick=function(){
 
-// move the image
-var img = document.getElementById('madi');
+// make a requst to the counter endpoint
 
-var marginLeft =0;
-function moveright () {
-    marginLeft = marginLeft+1;
-    img.style.marginLeft = marginLeft +'px';
-    
-}
+// Capture the response and store it in a variable
 
-img.onclick = function() {
-    var interval = setInterval(moveright,150);
-    
-    
+// Render the variable in the correct span
+countter=counter+1;
+var span=document.getElementById('count');
+span.innerHTML=counter.toString();
+
+
 };
