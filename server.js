@@ -113,6 +113,9 @@ app.get('/counter', function(req,res){
     
 });
 
+app.get('/favicon.ico', function (req, res) { 
+    res.sendFile(path.join(__dirname, 'ui', 'favicon.ico')); });
+
 app.get('/:articleName', function (req, res) {
     //articleName = a1
     //articles(articleName = () content object for article one)
@@ -128,8 +131,7 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/favicon.ico', function (req, res) { 
-    res.sendFile(path.join(__dirname, 'ui', 'favicon.ico')); });
+
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
