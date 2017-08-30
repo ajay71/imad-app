@@ -66,10 +66,4 @@ var name =nameInput.value;
     request.open('GET', 'http://ajaysaf.imad.hasura-app.io/submit-name?name='+name, true);
     request.send(null);
 
-
-
-   
-    
-    
-    
 };
