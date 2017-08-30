@@ -40,12 +40,7 @@ request.onreadystatechange = function(){
         // take some action
         if(request.status ==200){
           
-          
-          
-          //  var counter = request.responseText;
-        //    var span = document.getElementById('count'//);
-        //    span.innerHTML = counter.toString();
-            
+       
          //make a request to the server and send the name
     //Capture list of names and render it as a list
     var names= request.responseText;
