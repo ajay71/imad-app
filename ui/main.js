@@ -26,9 +26,7 @@ request.open('GET', 'http://ajaysaf.imad.hasura-app.io/counter', true);
 request.send(null);
 
 };
-//submit name
-var nameInput=document.getElementById('name');
-var name =nameInput.value;
+
 var submit=document.getElementById('submit_btn');
 submit.onclick=function(){
     
@@ -65,6 +63,10 @@ request.onreadystatechange = function(){
     //not done yet
     
 };
+
+ //submit name
+var nameInput=document.getElementById('name');
+var name =nameInput.value;
 // Make the requst
     request.open('GET', 'http://ajaysaf.imad.hasura-app.io/submit-name?name='+name, true);
     request.send(null);
