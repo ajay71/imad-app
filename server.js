@@ -16,57 +16,6 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
-var articles = {
-
-
- 'a1': {
-		title: 'article One | Ajay kumar Dubey',
-		heading: 'article one',
-		date: 'sep 5, 2017',
-	
-		content: `   <p>
-                        This is the content for my first article. This is the content for my first article .
-                        
-                    </p>
-                     <p>
-                        This is the content for my first article. This is the content for my first article .
-                        
-                    </p>
-                     <p>
-                        This is the content for my first article. This is the content for my first article .
-                        
-                    </p>  `
-    },
-  'a2': {
-        title: 'Article Two | Ajay kumar Dubey',
-		heading: 'Article second',
-		date: 'sep 10, 2017',
-	
-		content: `   <p>
-                        This is the content for my Second Article. 
-                     </p>  `
-    },
-  'a3': {
-    	title: 'Article 03 | Ajay kumar Dubey',
-		heading: 'Article third 03',
-		date: 'sep 15, 2017',
-	
-		content: `   <p>
-                        This is the content for my first article. This is the content for my first article .
-                        
-                    </p>
-                     <p>
-                        This is the content for my first article. This is the content for my first article .
-                        
-                    </p>
-                     <p>
-                        This is the content for my first article. This is the content for my first article .
-                        
-                    </p>  `
-    },
-    
-};
-
 function createTemplate (data) {
         
     var title = data.title;
@@ -111,11 +60,11 @@ function createTemplate (data) {
     return htmlTemplate;
 }
 
-
 app.get('/', function (req, res) {
   res.sendfile(path.join(__dirname, 'ui', 'index.html'));
 });
 var pool = new Pool(config);
+
 app.get('/test-db', function(req, res) {
     //make a select request
     //return a response with the results
@@ -137,6 +86,7 @@ app.get('/counter', function(req,res){
     
 });
 var names=[];
+
 app.get('/submit-name', function(req,res){
     //get the name from the requst
     var name = req.query.name;
@@ -146,7 +96,6 @@ app.get('/submit-name', function(req,res){
     res.send(JSON.stringify(names));
     
 });
-
 
 app.get('/favicon.ico', function (req, res) { 
     res.sendFile(path.join(__dirname, 'ui', 'favicon.ico')); });
@@ -188,12 +137,9 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-
-
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-
 // Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80
 var port = 80;
