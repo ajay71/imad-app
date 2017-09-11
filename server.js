@@ -6,7 +6,7 @@ var Pool = require('pg').Pool;
 var bodyParser = require('body-parser');
 
 var config = {
-    user: 'ajaysaf',
+    user: 'ajaysaf', 
     database: 'ajaysaf',
     host: 'db.imad.hasura-app.io',
     port: '5432',
